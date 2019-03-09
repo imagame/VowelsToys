@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<application xmlns="http://ns.adobe.com/air/application/15.0">
+	
+	<id>com.imagame.vowelstoys</id>
+	<versionNumber>1.0.1</versionNumber>
+	<supportedProfiles>mobileDevice</supportedProfiles>
+	<filename>Vowels Toys</filename>
+	
+	<name>Vowels Toys</name>
+	<description>Educational game to play with jigsaw puzzles and customize vowels cartoon characters to learn the vowels</description>
+	<copyright>Roberto Pena Gonzalez</copyright>
+<!--	
+	<android>
+		<manifestAdditions><![CDATA[
+			
+			<manifest android:installLocation="auto">
+				<uses-sdk android:minSdkVersion="8"/>
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+				
+				<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
+				
+				<application>
+					<meta-data android:name="com.google.android.gms.version" android:value="4452000"/>
+					<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+				</application>
+			</manifest>
+			
+		]]></manifestAdditions>
+	</android>
+ -->	
+	 
+    <iPhone> 
+        <InfoAdditions><![CDATA[ 
+		
+			<key>UIStatusBarStyle</key> 
+			<string>UIStatusBarStyleBlackOpaque</string> 
+			<key>UIRequiresPersistentWiFi</key> 
+			<string>NO</string>
+			<key>UIPrerenderedIcon</key>  
+			<true/>
+			<key>UIApplicationExitsOnSuspend</key>
+			<false/>
+			
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string> 
+				<string>2</string>
+			</array>
+			<key>MinimumOSVersion</key>
+			<string>6.0</string>	
+        ]]></InfoAdditions> 
+		<requestedDisplayResolution>standard</requestedDisplayResolution>
+    </iPhone> 
+	 
+	  
+	<initialWindow>
+		<title>Vowels Toys</title>
+		<content>VowelsToys.swf</content>
+		<visible>true</visible>
+		<fullScreen>true</fullScreen>
+		<!--<renderMode>auto</renderMode> -->
+		 <renderMode>gpu</renderMode> 
+		<renderMode>gpu</renderMode>
+		<systemChrome>standard</systemChrome>
+		<autoOrients>true</autoOrients>
+		<aspectRatio>landscape</aspectRatio>
+	</initialWindow>
+	
+ 
+  	
+<!-- Android icons 
+  <icon>
+	<image48x48>icons/icon_48.png</image48x48>
+    <image57x57>icons/icon_57.png</image57x57>
+	<image72x72>icons/icon_72.png</image72x72>
+	<image114x114>icons/icon_114.png</image114x114>
+    <image512x512>icons/icon_512.png</image512x512>  
+  </icon>  
+ -->
+ 	
+	<icon>
+  <!-- IOS 7: App icon (iPhone) -->
+		<image60x60>icons/icon_60.png</image60x60>
+		<image120x120>icons/icon_120.png</image120x120>
+		<image180x180>icons/icon_180.png</image180x180>		
+  <!-- IOS 7: App icon (iPad) -->
+		<image76x76>icons/icon_76.png</image76x76>
+		<image152x152>icons/icon_152.png</image152x152>
+  <!-- IOS 7: Spotlight search results icon (all devices) -->
+		<image40x40>icons/icon_40.png</image40x40>
+		<image80x80>icons/icon_80.png</image80x80>
+  <!-- IOS 7: Settings icon (all devices) -->
+		<image29x29>icons/icon_29.png</image29x29>
+		<image58x58>icons/icon_58.png</image58x58>
+		<image87x87>icons/icon_87.png</image87x87>		
+  <!-- IOS 6: App icon (iPhone) -->
+		<image57x57>icons/icon_57.png</image57x57>
+		<image114x114>icons/icon_114.png</image114x114>
+  <!-- IOS 6: App icon (iPad) -->
+		<image72x72>icons/icon_72.png</image72x72>
+		<image144x144>icons/icon_144.png</image144x144>
+  <!-- IOS 6: Spotlight search results and Settings icon (iPad) -->
+		<image50x50>icons/icon_50.png</image50x50>
+		<image100x100>icons/icon_100.png</image100x100>		
+	</icon>
+   
+ 
+<!-- 
+  <extensions>
+		<extensionID>so.cuo.platform.admob</extensionID>
+  </extensions>
+-->
+	
+	<!-- 
+	AIR options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	
+	AIR mobile options:
+	http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffe.html
+	
+	Android manifest documentation:
+	http://developer.android.com/guide/topics/manifest/manifest-intro.html
+	-->
+</application>

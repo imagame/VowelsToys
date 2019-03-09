@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<application xmlns="http://ns.adobe.com/air/application/14.0">
+	
+	<id>com.imagame.vowelstoys</id>
+	<versionNumber>1.0.1</versionNumber>
+	<supportedProfiles>mobileDevice</supportedProfiles>
+	<filename>Vowels Toys</filename>
+	
+	<name>Vowels Toys</name>
+	<description>Educational toy (edugame) to play with jigsaw puzzles and customize vowels cartoon characters</description>
+	<copyright>Roberto Pena Gonzalez</copyright>
+	
+	<android>
+		<manifestAdditions><![CDATA[
+			
+			<manifest android:installLocation="auto">
+				<uses-sdk android:minSdkVersion="8"/>
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+				
+				<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
+				
+				<application>
+					<meta-data android:name="com.google.android.gms.version" android:value="4452000"/>
+					<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+				</application>
+			</manifest>
+			
+		]]></manifestAdditions>
+	</android>
+	
+	<!-- 
+    <iPhone> 
+        <InfoAdditions><![CDATA[ 
+		
+			<key>UIStatusBarStyle</key> 
+			<string>UIStatusBarStyleBlackOpaque</string> 
+			<key>UIRequiresPersistentWiFi</key> 
+			<string>NO</string>
+			<key>UIPrerenderedIcon</key>  
+			<true/>
+			<key>UIApplicationExitsOnSuspend</key>
+			<false/>
+			
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string> 
+				<string>2</string>
+			</array>
+				
+        ]]></InfoAdditions> 
+		<requestedDisplayResolution>standard</requestedDisplayResolution>
+    </iPhone> 
+	  -->
+	  
+	<initialWindow>
+		<title>Vowels Toys</title>
+		<content>VowelsToys.swf</content>
+		<visible>true</visible>
+		<fullScreen>true</fullScreen>
+		<!--<renderMode>auto</renderMode> -->
+		<!-- <renderMode>gpu</renderMode> -->
+		<renderMode>auto</renderMode>
+		<systemChrome>standard</systemChrome>
+		<autoOrients>true</autoOrients>
+		<aspectRatio>landscape</aspectRatio>
+	</initialWindow>
+	
+ 
+  	
+<!-- Android icons  -->
+  <icon>
+	<image48x48>icons/icon_48.png</image48x48>
+    <image57x57>icons/icon_57.png</image57x57>
+	<image72x72>icons/icon_72.png</image72x72>
+	<image114x114>icons/icon_114.png</image114x114>
+    <image512x512>icons/icon_512.png</image512x512>  
+  </icon>  
+
+  
+
+  <extensions>
+	<!-- Option 0
+	  <extensionID>so.cuo.ane.Admob</extensionID>
+	  -->
+	<!-- Option 1 -->
+		<extensionID>so.cuo.platform.admob</extensionID>
+	  <!-- Option 3
+	  <extensionID>com.codealchemy.ane.admobane</extensionID> 
+	  -->
+  </extensions>
+
+	
+	<!-- 
+	AIR options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	
+	AIR mobile options:
+	http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffe.html
+	
+	Android manifest documentation:
+	http://developer.android.com/guide/topics/manifest/manifest-intro.html
+	-->
+</application>
